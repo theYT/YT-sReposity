@@ -1,0 +1,30 @@
+.tab-bar{
+    position:fixed;
+    display: flex;
+    height: 50px;
+    bottom: 0px;
+    left:0px;
+    right:0px
+}
+
+.tab-bar-item{
+    flex:1;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tab-bar-item img{
+    width: 30px;
+    height: 25px;
+}
+
+.tab-bar-item .text{
+    font-size: 12px;
+    color: #333;
+}
+/* 注意顺序,.active在下面,覆盖原来的color */
+.active .text{
+    color:#ff9854;
+}
