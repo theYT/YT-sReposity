@@ -9,7 +9,7 @@ const router=createRouter({
         },
         {
             path:"/home",
-            component:()=>import("../view/home/home.vue")
+            component:()=>import("../view/home/home.vue"),
         },
         {
             path:"/favor",
@@ -23,6 +23,27 @@ const router=createRouter({
         {
             path:"/order",
             component:()=>import("../view/order/order.vue")
+        },
+        {
+            path:"/city",
+            component:()=>import("../view/city/city.vue"),
+            meta:{
+                hideTabBar:"ture"
+            }
+        },
+        {
+            path:"/search",
+            component:()=>import("../view/search/search.vue"),
+            meta:{
+                hideTabBar:"ture"
+            }
+        },
+        {
+            path:"/detail/:id",
+            component:()=>import("../view/detail/detail.vue"),
+            meta:{
+                hideTabBar:"ture"
+            }
         }
     ]
 })
